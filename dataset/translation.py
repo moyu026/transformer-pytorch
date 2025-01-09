@@ -13,9 +13,13 @@ from tqdm import tqdm
 from dataset import common
 
 # pylint: disable=arguments-differ
+from spacy.lang.en import English
+spacy_en = English()
+from spacy.lang.de import German
+spacy_de = German()
 
-spacy_de = spacy.load('de')
-spacy_en = spacy.load('en')
+# spacy_de = spacy.load('de')
+# spacy_en = spacy.load('en')
 
 url = re.compile('(<url>.*</url>)')
 
